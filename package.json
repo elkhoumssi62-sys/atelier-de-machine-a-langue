@@ -13,6 +13,7 @@
     "seed": "tsx --env-file=.env.local src/db/seed.ts"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.2.0",
     "dotenv": "^16.4.7",
     "drizzle-orm": "0.45.2",
     "next": "16.2.6",
