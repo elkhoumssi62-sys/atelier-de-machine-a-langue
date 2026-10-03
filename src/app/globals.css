@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #16130f;
+  --color-parchment: #faf6ef;
+  --color-sand: #efe6d8;
+  --color-ocre: #a8591b;
+  --color-ocre-light: #c9803f;
+  --color-forest: #1f4d3f;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--color-parchment);
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(168, 89, 27, 0.08), transparent 42%),
+    radial-gradient(circle at 88% 0%, rgba(31, 77, 63, 0.09), transparent 38%);
+  background-attachment: fixed;
+}
+
+.font-display {
+  font-family: var(--font-serif);
+  letter-spacing: -0.01em;
+}
+
+.prose-mal p {
+  margin-bottom: 0.85rem;
+  line-height: 1.75;
+}
+
+.card {
+  border: 1px solid rgba(22, 19, 15, 0.1);
+  background: rgba(255, 253, 250, 0.85);
+  backdrop-filter: blur(4px);
+}
+
+.rule-dotted {
+  background-image: linear-gradient(to right, rgba(22, 19, 15, 0.25) 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 6px 1px;
+  background-repeat: repeat-x;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  outline: 2px solid rgba(168, 89, 27, 0.45);
+  outline-offset: 1px;
+}
+
+::selection {
+  background: rgba(168, 89, 27, 0.2);
+}
